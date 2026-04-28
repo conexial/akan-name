@@ -4,7 +4,9 @@ body {
   background: #f3f4f6;
   color: #2d2929;
   text-align: center;
-  padding: 40px;
+  padding: 20px;
+  margin-left: 6px;
+  margin-right: 6px
 }
 /* Title */
 h1 {
@@ -14,12 +16,13 @@ h1 {
 
 p {
   margin-bottom: 25px;
-  line-height: 1.5;
 }
-
+/* Form styling */
 form {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  padding: 20px;
 }
 
 label {
