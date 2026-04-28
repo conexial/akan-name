@@ -63,10 +63,9 @@ button:hover {
 }
 /* Result styling */
 #result {
-  margin-top: 20px;
-  padding: 15px;
+  padding: 20px;
   background: #e0e7ff;
-  border-radius: 8px;
+  border-radius: 10px;
   max-width: 400px;
   text-align: center;
   font-size: 18px;
