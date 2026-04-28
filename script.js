@@ -47,7 +47,7 @@ form.addEventListener("submit", function(event) {
    let yy = year % 100;
    
 //fomula to calculate day of week
-let d = ((4 * cc) + Math.floor(cc / 4) + (5 * yy) + Math.floor(yy / 4) + Math.floor(26 * (month + 1) / 10) + day) % 7;
+let d = ((4 * cc - 2 * cc - 1) + (5 * yy) + (1026 * (month + 1)) + day) % 7;
   
 // Get Akan name based on gender
 let akanName;
