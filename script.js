@@ -12,24 +12,29 @@ form.addEventListener("submit", function(event) {
 });
 
 // Get input values
+ document.getElementById("akanForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
   let day = Number(document.getElementById("day").value);
   let month = Number(document.getElementById("month").value);
   let year = Number(document.getElementById("year").value);
-let gender = document.getElementById("gender").value;
-  
-// Validate input
-if (day < 1 || day > 31) {
-  alert("Enter valid day (1-31)");
-  return;
-}
-if (month < 1 || month > 12) {
-  alert("Enter valid month (1-12)");
-  return;
-}
- if (gender === "") {
+  let gender = document.getElementById("gender").value;
+
+  // ✅ NOW return works (inside function)
+  if (day < 1 || day > 31) {
+    alert("Enter valid day (1-31)");
+    return;
+  }
+
+  if (month < 1 || month > 12) {
+    alert("Enter valid month (1-12)");
+    return;
+  }
+
+  if (gender === "") {
     alert("Select gender");
     return;
- }
+  }
   //split year into century and year
   let cc = Math.floor(year / 100);
 let yy = year % 100;
@@ -49,4 +54,4 @@ document.getElementById("output").innerHTML =
     'Name: "' + akanName + '"<br>' +
     'Gender: "' + gender + '"<br>' +
   'Day: "' + dayName + '"';
-    
+});
