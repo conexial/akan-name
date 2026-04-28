@@ -37,9 +37,10 @@ form.addEventListener("submit", function(event) {
   }
   //split year into century and year
   let cc = Math.floor(year / 100);
-let yy = year % 100;
+   let yy = year % 100;
+   
 //fomula to calculate day of week
-let d = 4((4 * cc) + Math.floor(cc / 4) + (5 * yy) + Math.floor(yy / 4) + Math.floor(26 * (month + 1) / 10) + day) % 7;
+let d = ((4 * cc) + Math.floor(cc / 4) + (5 * yy) + Math.floor(yy / 4) + Math.floor(26 * (month + 1) / 10) + day) % 7;
   
 // Get Akan name based on gender
 let akanName;
