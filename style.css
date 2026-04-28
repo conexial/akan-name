@@ -72,3 +72,11 @@ button:hover {
   margin: auto;
   
 }
+/*result text styling */
+#result p {
+  margin: 8px 0;
+  font-weight: bold;
+
+  /*highlighting the result text */
+  color: #4f46e5;
+  font-weight: bold;
