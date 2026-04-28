@@ -15,22 +15,27 @@ form.addEventListener("submit", function(event) {
   let month = Number(document.getElementById("month").value);
   let year = Number(document.getElementById("year").value);
   let gender = document.getElementById("gender").value;
-  
-  // ✅ NOW return works (inside function)
+
+  // Validate day
   if (day < 1 || day > 31) {
     alert("Enter valid day (1-31)");
     return;
   }
+
+  // Validate month
 
   if (month < 1 || month > 12) {
     alert("Enter valid month (1-12)");
     return;
   }
 
+  // Validate year
+  if (year < 1) {
   if (gender === "") {
     alert("Select gender");
     return;
   }
+
   //split year into century and year
   let cc = Math.floor(year / 100);
    let yy = year % 100;
