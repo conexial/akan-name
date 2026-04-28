@@ -1,16 +1,13 @@
-
+/*body stling */
 body {
   font-family: Arial, sans-serif;
   background: #f3f4f6;
   color: #2d2929;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-
-}
-
-h1 {
   text-align: center;
+  padding: 40px;
+}
+/* Title */
+h1 {
   color: #4f46e5;
   margin-bottom: 15px;
 }
