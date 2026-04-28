@@ -29,8 +29,14 @@ form.addEventListener("submit", function(event) {
     return;
   }
 
+  
   // Validate year
-  if (year < 1) {
+  if (year < 1000) {
+    alert("Enter a valid year");
+    return;
+  }
+
+  // Validate gender
   if (gender === "") {
     alert("Select gender");
     return;
@@ -51,9 +57,8 @@ if (gender === "male") {
   akanName = femaleNames[d];
 }
 
-// Display result
-document.getElementById("output").innerHTML =
-    'Name: "' + akanName + '"<br>' +
-    'Gender: "' + gender + '"<br>' +
-    'Day: "' + dayName + '"';
+ // Display result
+  document.getElementById("nameOutput").textContent = '"' + akanName + '"';
+  document.getElementById("genderOutput").textContent = '"' + gender + '"';
+  document.getElementById("dayOutput").textContent = '"' + dayName + '"';
 });
