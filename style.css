@@ -37,7 +37,7 @@ label {
   background-color: #eee;
   font-weight: bold;
 }
-
+/* Input and select styling */
 input,
 select {
   padding: 12px;
@@ -46,25 +46,28 @@ select {
   border-radius: 8px;
   font-size: 18px;
 }
-
+/* Button styling */
 button {
   padding: 12px;
   background: #4f46e5;
   color: white;
   border: none;
   border-radius: 8px;
+  border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
 }
-
+/* Button hover effect */
 button:hover {
   background: #3730a3;
 }
+/* Result styling */
 #result {
   margin-top: 20px;
   padding: 15px;
   background: #e0e7ff;
   border-radius: 8px;
+  max-width: 400px;
   text-align: center;
   font-size: 18px;
 }
