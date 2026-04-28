@@ -54,5 +54,5 @@ if (gender === "male") {
 document.getElementById("output").innerHTML =
     'Name: "' + akanName + '"<br>' +
     'Gender: "' + gender + '"<br>' +
-  'Day: "' + dayName + '"';
+    'Day: "' + dayName + '"';
 });
