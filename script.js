@@ -8,18 +8,14 @@ const form = document.getElementById("akanForm");
 
 // Listen for form submission
 form.addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent form from submitting)
-});
+  event.preventDefault();
 
-// Get input values
- document.getElementById("akanForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-
+   // Get input values
   let day = Number(document.getElementById("day").value);
   let month = Number(document.getElementById("month").value);
   let year = Number(document.getElementById("year").value);
   let gender = document.getElementById("gender").value;
-
+  
   // ✅ NOW return works (inside function)
   if (day < 1 || day > 31) {
     alert("Enter valid day (1-31)");
