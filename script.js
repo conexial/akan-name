@@ -58,7 +58,7 @@ if (gender === "male") {
 }
 
  // Display result
-  document.getElementById("nameOutput").textContent = '"' + akanName + '"';
-  document.getElementById("genderOutput").textContent = '"' + gender + '"';
-  document.getElementById("dayOutput").textContent = '"' + dayName + '"';
+  document.getElementById("nameOutput").textContent = akanName;
+  document.getElementById("genderOutput").textContent = gender;
+  document.getElementById("dayOutput").textContent = dayName;
 });
