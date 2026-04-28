@@ -26,3 +26,8 @@ if (month < 1 || month > 12) {
   alert("Enter valid month (1-12)");
   return;
 }
+ if (gender === "") {
+    alert("Select gender");
+    return;
+ }
+  
